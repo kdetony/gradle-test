@@ -1,7 +1,6 @@
 pipeline {
     agent any
     environment {
-        //be sure to replace "felipelujan" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "kdetony/gradle-test"
     }
     stages {      
