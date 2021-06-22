@@ -37,7 +37,7 @@ pipeline {
                //     kubeconfigId: 'kubeconfig',
                //     configs: 'k8s_svc_deploy.yaml',
                //     enableConfigSubstitution: true
-                sh 'kubectl --kubeconfig=key.yaml apply -f k8s_svc_deploy.yaml'
+                sh '$(which kubectl) --kubeconfig=key.yaml apply -f k8s_svc_deploy.yaml'
                // )
             }
         }
