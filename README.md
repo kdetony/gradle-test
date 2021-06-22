@@ -1,2 +1,3 @@
 Disclaimer.
-This project is deprecated due to incompatibilities between jenkins and the plugins required to  deploy to kubernetes
+- Plugins deprecados
+- Modificando el jenkinsfile para que ejecute kubectl directamente
