@@ -32,11 +32,12 @@ pipeline {
                 branch 'master'
             }
             steps {
-                milestone(1)
-                kubernetesDeploy(
-                    kubeconfigId: 'kubeconfig',
-                    configs: 'k8s_svc_deploy.yaml',
-                    enableConfigSubstitution: true
+               // milestone(1)
+               // kubernetesDeploy(
+               //     kubeconfigId: 'kubeconfig',
+               //     configs: 'k8s_svc_deploy.yaml',
+               //     enableConfigSubstitution: true
+                sh 'kubectl --kubeconfig=key.yaml apply -f k8s_svc_deploy.yaml'
                 )
             }
         }
